@@ -22,7 +22,7 @@ const Home=()=>{
             </Grid>
             <BuyCurrency/>
         </Grid>
-            <CurrentPriceTable></CurrentPriceTable>
+           
         </Grid>
     )
 }
