@@ -41,7 +41,7 @@ const BuyCurrency = () => {
     }
 
     return (
-        <Grid container xs={12} sx={{ marginTop: '60px', textAlign: 'center' }}>
+        <Grid container  item xs={12} sx={{ marginTop: '60px', textAlign: 'center' }}>
 
             <Grid item xs={12}>
                 <img src={Biglogo} width='300px' />
@@ -51,7 +51,7 @@ const BuyCurrency = () => {
                     <TextField sx={{ width: '98%' }} label="تومان" value={coinforinput?.current_price * toman * number} defaultValue={'789779'}></TextField>
                 </Grid>
                 <Grid item xs={2}>
-                    <TextField defaultValue={''}
+                    <TextField defaultValue={'1'}
                         value={number}
                         sx={{ width: '98%' }}
                         label="واحد"
@@ -78,7 +78,7 @@ const BuyCurrency = () => {
             <Dialog open={dialogOpen} onClose={() => setDialogOpen(false)} >
                 <Grid bgcolor={'white'} sx={{p:3}}>
                     <Grid>انتخاب ارز</Grid>
-                    <Grid dividers>
+                    <Grid >
                         <input type='search' onChange={handleChange}></input>
                         {coins.filter(coin => coin?.name?.toLocaleLowerCase()?.includes(search.toLocaleLowerCase())).map((coin) => (
                             <Grid container key={coin.id} onClick={() => handleCoin(coin.id)} sx={{ cursor: 'pointer' }}>
