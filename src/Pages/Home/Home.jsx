@@ -3,7 +3,6 @@ import { Grid,Button} from '@mui/material';
 import logo from '../../assets/image/logo.svg'
 import BuyCurrency from "../../components/BuyCurrency/BuyCurrency";
 import {Link} from "react-router-dom";
-import CurrentPriceTable from "../../components/CurrentPrice-Table/CurrentPriceTable";
 
 const Home=()=>{
     return(
